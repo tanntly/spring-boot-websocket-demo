@@ -6,7 +6,22 @@
 
     <groupId>cn.tanntly</groupId>
     <artifactId>spring-boot-websocket-demo</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
+    <modules>
+        <module>webapp-module</module>
+        <module>entity-module</module>
+    </modules>
 
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.2</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>
